@@ -2,24 +2,23 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  ![GitHub stars](https://img.shields.io/github/stars/lichen14/awesome-weakly-supervised-segmentation?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/lichen14/awesome-weakly-supervised-segmentation?color=green&label=Fork)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=lichen14.awesome-weakly-supervised-segmentation)
 * Recently, weak-supervised image segmentation has become a hot topic in medical&natural image computing. Unfortunately, there are only a few open-source codes and datasets, since the privacy policy and others. For easy evaluation and fair comparison, we are trying to build a semi-supervised medical image segmentation benchmark to boost the semi-supervised learning research in the medical image computing community. **If you are interested, you can push your implementations or ideas to this repo or contact [me](https://lichen14.github.io/) at any time**.  
-Typical weak annotations include image-level labels, bounding boxes, points, and scribbles. This repo focus on points and scribbles.
+### Typical weak annotations include image-level labels, bounding boxes, points, and scribbles. This repo focus on points and scribbles.
 
-* This repo has re-implemented these semi-supervised methods (with some modifications for semi-supervised medical image segmentation, more details please refer to these original works): (1) [Mean Teacher](https://papers.nips.cc/paper/6719-mean-teachers-are-better-role-models-weight-averaged-consistency-targets-improve-semi-supervised-deep-learning-results.pdf); (2) [Entropy Minimization](https://openaccess.thecvf.com/content_CVPR_2019/papers/Vu_ADVENT_Adversarial_Entropy_Minimization_for_Domain_Adaptation_in_Semantic_Segmentation_CVPR_2019_paper.pdf); (3) [Deep Adversarial Networks](https://link.springer.com/chapter/10.1007/978-3-319-66179-7_47); (4) [Uncertainty Aware Mean Teacher](https://arxiv.org/pdf/1907.07034.pdf); (5) [Interpolation Consistency Training](https://arxiv.org/pdf/1903.03825.pdf); (6) [Uncertainty Rectified Pyramid Consistency](https://arxiv.org/pdf/2012.07042.pdf); (7) [Cross Pseudo Supervision](https://arxiv.org/abs/2106.01226); (8) [Cross Consistency Training](https://openaccess.thecvf.com/content_CVPR_2020/papers/Ouali_Semi-Supervised_Semantic_Segmentation_With_Cross-Consistency_Training_CVPR_2020_paper.pdf); (9) [Deep Co-Training](https://openaccess.thecvf.com/content_ECCV_2018/papers/Siyuan_Qiao_Deep_Co-Training_for_ECCV_2018_paper.pdf); (10) [Cross Teaching between CNN and Transformer](https://arxiv.org/pdf/2112.04894.pdf); (11) [FixMatch](https://arxiv.org/abs/2001.07685); (12) [Regularized Dropout](https://proceedings.neurips.cc/paper/2021/file/5a66b9200f29ac3fa0ae244cc2a51b39-Paper.pdf). In addition, several backbones networks (both 2D and 3D) are also supported in this repo, such as **UNet, nnUNet, VNet, AttentionUNet, ENet, Swin-UNet, etc**.
+<!-- * This repo has re-implemented these semi-supervised methods (with some modifications for semi-supervised medical image segmentation, more details please refer to these original works): (1) [Mean Teacher](https://papers.nips.cc/paper/6719-mean-teachers-are-better-role-models-weight-averaged-consistency-targets-improve-semi-supervised-deep-learning-results.pdf); (2) [Entropy Minimization](https://openaccess.thecvf.com/content_CVPR_2019/papers/Vu_ADVENT_Adversarial_Entropy_Minimization_for_Domain_Adaptation_in_Semantic_Segmentation_CVPR_2019_paper.pdf); (3) [Deep Adversarial Networks](https://link.springer.com/chapter/10.1007/978-3-319-66179-7_47); (4) [Uncertainty Aware Mean Teacher](https://arxiv.org/pdf/1907.07034.pdf); (5) [Interpolation Consistency Training](https://arxiv.org/pdf/1903.03825.pdf); (6) [Uncertainty Rectified Pyramid Consistency](https://arxiv.org/pdf/2012.07042.pdf); (7) [Cross Pseudo Supervision](https://arxiv.org/abs/2106.01226); (8) [Cross Consistency Training](https://openaccess.thecvf.com/content_CVPR_2020/papers/Ouali_Semi-Supervised_Semantic_Segmentation_With_Cross-Consistency_Training_CVPR_2020_paper.pdf); (9) [Deep Co-Training](https://openaccess.thecvf.com/content_ECCV_2018/papers/Siyuan_Qiao_Deep_Co-Training_for_ECCV_2018_paper.pdf); (10) [Cross Teaching between CNN and Transformer](https://arxiv.org/pdf/2112.04894.pdf); (11) [FixMatch](https://arxiv.org/abs/2001.07685); (12) [Regularized Dropout](https://proceedings.neurips.cc/paper/2021/file/5a66b9200f29ac3fa0ae244cc2a51b39-Paper.pdf). In addition, several backbones networks (both 2D and 3D) are also supported in this repo, such as **UNet, nnUNet, VNet, AttentionUNet, ENet, Swin-UNet, etc**.
 
 * This project was initially developed for our previous works. Now and future, we are still working on extending it to be more user-friendly and support more approaches to boost further and ease this topic research. 
-<h1> 
+<h1>  -->
 
 
 </h1>
 
+## Literature List
 <h3> Keywords </h3>
-
 
 __`img.`__: image level label &emsp; | &emsp; __`vid.`__: video level label &emsp; | &emsp; __`box.`__: bounding box label &emsp; | &emsp; __`ins.`__: instance segmentation  &emsp; | &emsp; __`pan.`__: panotic segmentation &emsp; | &emsp;  __`point.`__: point cloud segmentation
 
 Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular & cited in a survey &emsp;|&emsp;
 :sunflower: natural scene images &emsp;|&emsp; :earth_americas: remote sensing images &emsp;|&emsp; :hospital: medical images 
-
 
 |Date|Institute|Title|Code|Publication|Label
 |---|---|---|---|---|---|
@@ -217,7 +216,14 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 |2017-09|W. Bai and D. Rueckert|Semi-supervised Learning for Network-Based Cardiac MR Image Segmentation|None|[MICCAI2017](https://link.springer.com/chapter/10.1007/978-3-319-66185-8_29)|
 |2016-09|D. Mahapatra|Semi-supervised learning and graph cuts for consensus based medical image segmentation|None|[PR2016](https://www.sciencedirect.com/science/article/pii/S0031320316302904)|
 
-
+## Tutorial
+* 中文：
+1. https://zhuanlan.zhihu.com/p/81404885
+2. https://baijiahao.baidu.com/s?id=1632614040925107215&wfr=spider&for=pc
+* English：
+1. https://ai.stanford.edu/blog/weak-supervision
+2. https://www.snorkel.org/blog/weak-supervision
+3. Zhou Z H. [A brief introduction to weakly supervised learning](https://academic.oup.com/nsr/article/5/1/44/4093912). National science review, 2018, 5(1): 44-53.
 ## Conclusion
 * This repository provides daily-update literature reviews, algorithms' implementation, and some examples of using PyTorch for semi-supervised medical image segmentation. The project is under development. Currently, it supports 2D and 3D semi-supervised image segmentation and includes five widely-used algorithms' implementations.
 		
