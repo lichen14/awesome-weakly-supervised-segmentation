@@ -9,9 +9,6 @@ Typical weak annotations include image-level labels, bounding boxes, points, and
 * This project was initially developed for our previous works. Now and future, we are still working on extending it to be more user-friendly and support more approaches to boost further and ease this topic research. 
 <h1> 
 
-```diff
-- Recent papers (from 2015)
-```
 
 </h1>
 
@@ -23,9 +20,9 @@ __`img.`__: image level label &emsp; | &emsp; __`vid.`__: video level label &ems
 Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular & cited in a survey &emsp;|&emsp;
 :sunflower: natural scene images &emsp;|&emsp; :earth_americas: remote sensing images &emsp;|&emsp; :hospital: medical images 
 
-## Literature reviews of semi-supervised learning approach for medical image segmentation (**SSL4MIS**).
-|Date|The First and Last Authors|Title|Code|Reference|
-|---|---|---|---|---|
+
+|Date|Institute|Title|Code|Publication|Label
+|---|---|---|---|---|---|
 |2022-09|H. Basak and R. Sarkar|Addressing Class Imbalance in Semi-supervised Image Segmentation: A Study on Cardiac MRI|None|[MICCAI2022](https://arxiv.org/pdf/2209.00123.pdf)|
 |2022-08|Q. Wang and J. Chen|A regularization-driven Mean Teacher model based on semi-supervised learning for medical image segmentation|[Code](https://github.com/qingwang-usc/RMT_VAT)|[PMB2022](https://iopscience.iop.org/article/10.1088/1361-6560/ac89c8)|
 |2022-08|Y. Meng and Y. Zheng|Dual Consistency Enabled Weakly and Semi-Supervised Optic Disc and Cup Segmentation with Dual Adaptive Graph Convolutional Networks|[Code](https://github.com/smallmax00/Dual_Adaptive_Graph_Reasoning)|[TMI2022](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870838)|
