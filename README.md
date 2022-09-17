@@ -15,13 +15,14 @@
 ## Literature List
 <h3> Keywords </h3>
 
-__`img.`__: image level label &emsp; | &emsp; __`vid.`__: video level label &emsp; | &emsp; __`box.`__: bounding box label &emsp; | &emsp; __`ins.`__: instance segmentation  &emsp; | &emsp; __`pan.`__: panotic segmentation &emsp; | &emsp;  __`point.`__: point cloud segmentation
+__`img.`__: image level label &emsp; | &emsp; __`scribble.`__: scribble level label &emsp; | &emsp; __`box.`__: bounding box label &emsp; | &emsp; __`ins.`__: instance segmentation  &emsp; | &emsp; __`pan.`__: panotic segmentation &emsp; | &emsp;  __`point.`__: point cloud segmentation
 
 Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular & cited in a survey &emsp;|&emsp;
 :sunflower: natural scene images &emsp;|&emsp; :earth_americas: remote sensing images &emsp;|&emsp; :hospital: medical images 
 
-|Date|Institute|Title|Code|Publication|Label
+|Date|1st Institute|Title|Code|Publication|Label
 |---|---|---|---|---|---|
+|2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scribble.`__ &emsp; :hospital:|
 |2022-09|H. Basak and R. Sarkar|Addressing Class Imbalance in Semi-supervised Image Segmentation: A Study on Cardiac MRI|None|[MICCAI2022](https://arxiv.org/pdf/2209.00123.pdf)|
 |2022-08|Q. Wang and J. Chen|A regularization-driven Mean Teacher model based on semi-supervised learning for medical image segmentation|[Code](https://github.com/qingwang-usc/RMT_VAT)|[PMB2022](https://iopscience.iop.org/article/10.1088/1361-6560/ac89c8)|
 |2022-08|Y. Meng and Y. Zheng|Dual Consistency Enabled Weakly and Semi-Supervised Optic Disc and Cup Segmentation with Dual Adaptive Graph Convolutional Networks|[Code](https://github.com/smallmax00/Dual_Adaptive_Graph_Reasoning)|[TMI2022](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870838)|
