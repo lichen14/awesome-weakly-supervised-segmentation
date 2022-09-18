@@ -23,6 +23,7 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 |Date|1st Institute|Title|Code|Publication|Label
 |---|---|---|---|---|---|
 |2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scribble.`__ &emsp; :hospital: COVID-19|
+|2021-03|University of Edinburgh|Learning to Segment from Scribbles using Multi-scale Adversarial Attention Gates|[github](https://vios-s.github.io/multiscale-adversarial-attention-gates)|[TMI](https://ieeexplore.ieee.org/abstract/document/9389796)|__`scribble.`__ &emsp; :hospital: |
 |2022-09|H. Basak and R. Sarkar|Addressing Class Imbalance in Semi-supervised Image Segmentation: A Study on Cardiac MRI|None|[MICCAI2022](https://arxiv.org/pdf/2209.00123.pdf)|
 |2022-08|Q. Wang and J. Chen|A regularization-driven Mean Teacher model based on semi-supervised learning for medical image segmentation|[Code](https://github.com/qingwang-usc/RMT_VAT)|[PMB2022](https://iopscience.iop.org/article/10.1088/1361-6560/ac89c8)|
 |2022-08|Y. Meng and Y. Zheng|Dual Consistency Enabled Weakly and Semi-Supervised Optic Disc and Cup Segmentation with Dual Adaptive Graph Convolutional Networks|[Code](https://github.com/smallmax00/Dual_Adaptive_Graph_Reasoning)|[TMI2022](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870838)|
@@ -241,14 +242,14 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
     </tr>
     <tr>
         <td>Dice</td>
-        <td>sensitivity</td>
-        <td>specificity</td>
+        <td>SE</td>
+        <td>SP</td>
         <td>Dice</td>
-        <td>sensitivity</td>
-        <td>specificity</td>
+        <td>SE</td>
+        <td>SP</td>
         <td>Dice</td>
-        <td>sensitivity</td>
-        <td>specificity</td>
+        <td>SE</td>
+        <td>SP</td>
     </tr>
     <tr>
         <td rowspan="4">Scribble</td>
