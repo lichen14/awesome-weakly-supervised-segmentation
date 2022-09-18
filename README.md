@@ -1,4 +1,4 @@
-# Weakly-supervised-learning-for-image-segmentation, including medical and natural images.
+# Weakly-supervised-learning-for-image-segmentation
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  ![GitHub stars](https://img.shields.io/github/stars/lichen14/awesome-weakly-supervised-segmentation?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/lichen14/awesome-weakly-supervised-segmentation?color=green&label=Fork)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=lichen14.awesome-weakly-supervised-segmentation)
 * Recently, weak-supervised image segmentation has become a hot topic in medical&natural image computing. Unfortunately, there are only a few open-source codes and datasets, since the privacy policy and others. For easy evaluation and fair comparison, we are trying to build a semi-supervised medical image segmentation benchmark to boost the semi-supervised learning research in the medical image computing community. **If you are interested, you can push your implementations or ideas to this repo or contact [me](https://lichen14.github.io/) at any time**.  
@@ -15,7 +15,7 @@
 ## Literature List
 <h3> Keywords </h3>
 
-__`img.`__: image level label &emsp; | &emsp; __`scribble.`__: scribble level label &emsp; | &emsp; __`box.`__: bounding box label &emsp; | &emsp; __`ins.`__: instance segmentation  &emsp; | &emsp; __`pan.`__: panotic segmentation &emsp; | &emsp;  __`point.`__: point cloud segmentation
+__`img.`__: image level label &emsp; | &emsp; __`scribble.`__: scribble level label &emsp; | &emsp; __`box.`__: bounding box label &emsp; | &emsp; __`point.`__: point level label
 
 Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular & cited in a survey &emsp;|&emsp;
 :sunflower: natural scene images &emsp;|&emsp; :earth_americas: remote sensing images &emsp;|&emsp; :hospital: medical images 
