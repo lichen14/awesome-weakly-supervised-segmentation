@@ -22,7 +22,7 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 
 |Date|1st Institute|Title|Code|Publication|Label
 |---|---|---|---|---|---|
-|2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scribble.`__ &emsp; :hospital:|
+|2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scribble.`__ &emsp; :hospital: COVID-19|
 |2022-09|H. Basak and R. Sarkar|Addressing Class Imbalance in Semi-supervised Image Segmentation: A Study on Cardiac MRI|None|[MICCAI2022](https://arxiv.org/pdf/2209.00123.pdf)|
 |2022-08|Q. Wang and J. Chen|A regularization-driven Mean Teacher model based on semi-supervised learning for medical image segmentation|[Code](https://github.com/qingwang-usc/RMT_VAT)|[PMB2022](https://iopscience.iop.org/article/10.1088/1361-6560/ac89c8)|
 |2022-08|Y. Meng and Y. Zheng|Dual Consistency Enabled Weakly and Semi-Supervised Optic Disc and Cup Segmentation with Dual Adaptive Graph Convolutional Networks|[Code](https://github.com/smallmax00/Dual_Adaptive_Graph_Reasoning)|[TMI2022](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870838)|
@@ -216,6 +216,116 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 |2017-09|S. Sedai and R. Garnavi|Semi-supervised Segmentation of Optic Cup in Retinal Fundus Images Using Variational Autoencoder|None|[MICCAI2017](https://link.springer.com/chapter/10.1007/978-3-319-66185-8_9)|
 |2017-09|W. Bai and D. Rueckert|Semi-supervised Learning for Network-Based Cardiac MR Image Segmentation|None|[MICCAI2017](https://link.springer.com/chapter/10.1007/978-3-319-66185-8_29)|
 |2016-09|D. Mahapatra|Semi-supervised learning and graph cuts for consensus based medical image segmentation|None|[PR2016](https://www.sciencedirect.com/science/article/pii/S0031320316302904)|
+
+## Benchmark
+* [IS-COVID dataset](https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9098956&ref=)
+
+|Label|Methods|dice|Jaccard|sensitivity|specificity|MAE|
+|---|---|---|---|---|---|---|
+|Scribble|p-UNet[55]|0.660|0.516|0.833|0.825|0.138|
+||WS0D[54]|0.684|0.533|0.842|0.871|0.114|
+||S2L[44]|0.708|0.550|0.805|0.926|0.091|
+||USTM-Net|0.725|0.582|0.854|0.967|0.086|
+|Full|U-Net[49]|0.736|0.595|0.867|0.961|0.082|
+
+* [Lesion Segmentation (CC-COVID) dataset](https://www.cell.com/cell/pdf/S0092-8674(20)31071-0.pdf)
+
+<table>
+<table style="text-align: center">
+    <tr>
+        <td rowspan="2">Label</td>
+        <td rowspan="2">Methods</td>
+        <td colspan="3">Consolidation</td>
+        <td colspan="3">Ground-Glass Opacity</td>
+        <td colspan="3">Average</td>
+    </tr>
+    <tr>
+        <td>Dice</td>
+        <td>sensitivity</td>
+        <td>specificity</td>
+        <td>Dice</td>
+        <td>sensitivity</td>
+        <td>specificity</td>
+        <td>Dice</td>
+        <td>sensitivity</td>
+        <td>specificity</td>
+    </tr>
+    <tr>
+        <td rowspan="4">Scribble</td>
+        <td>p-UNet [55]</td>
+        <td>0.672 </td>
+        <td>0.806 </td>
+        <td>0.908 </td>
+        <td>0.643 </td>
+        <td>0.789 </td>
+        <td>0.894 </td>
+        <td>0.658 </td>
+        <td>0.798 </td>
+        <td>0.901 </td>
+    </tr>
+    <tr>
+        <td>WSOD [54]</td>
+        <td>0.695 </td>
+        <td>0.833 </td>
+        <td>0.917 </td>
+        <td>0.674 </td>
+        <td>0.801 </td>
+        <td>0.902 </td>
+        <td>0.685 </td>
+        <td>0.817 </td>
+        <td>0.910 </td>
+    </tr>
+    <tr>
+        <td>S2L [44]</td>
+        <td>0.724 </td>
+        <td>0.857 </td>
+        <td>0.934 </td>
+        <td>0.698 </td>
+        <td>0.840 </td>
+        <td>0.928 </td>
+        <td>0.711 </td>
+        <td>0.849 </td>
+        <td>0.931 </td>
+    </tr>
+    <tr>
+        <td>USTM-Net</td>
+        <td>0.736 </td>
+        <td>0.862 </td>
+        <td>0.958 </td>
+        <td>0.709 </td>
+        <td>0.829 </td>
+        <td>0.947 </td>
+        <td>0.723 </td>
+        <td>0.846 </td>
+        <td>0.953 </td>
+    </tr>
+    <tr>
+        <td>Point</td>
+        <td>WSCL [18]</td>
+        <td>0.705 </td>
+        <td>0.827 </td>
+        <td>0.920 </td>
+        <td>0.681 </td>
+        <td>0.803 </td>
+        <td>0.916 </td>
+        <td>0.693 </td>
+        <td>0.815 </td>
+        <td>0.918 </td>
+    </tr>
+    <tr>
+        <td>Full</td>
+        <td>U-Net [49]</td>
+        <td>0.748 </td>
+        <td>0.874 </td>
+        <td>0.966 </td>
+        <td>0.713 </td>
+        <td>0.825 </td>
+        <td>0.952 </td>
+        <td>0.731 </td>
+        <td>0.850 </td>
+        <td>0.959 </td>
+    </tr>
+</table>
 
 ## Tutorial
 * 中文：
