@@ -336,7 +336,8 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 2. https://www.snorkel.org/blog/weak-supervision
 3. Zhou Z H. [A brief introduction to weakly supervised learning](https://academic.oup.com/nsr/article/5/1/44/4093912). National science review, 2018, 5(1): 44-53.
 ## Conclusion
-* This repository provides daily-update literature reviews, algorithms' implementation, and some examples of using PyTorch for semi-supervised medical image segmentation. The project is under development. Currently, it supports 2D and 3D semi-supervised image segmentation and includes five widely-used algorithms' implementations.
+* This repository provides daily-update literature reviews, algorithms' implementation, and some examples of using PyTorch for weak-supervised image segmentation. The project is under development. 
+In the future, it will support 2D and 3D semi-supervised image segmentation and includes five widely-used algorithms' implementations.
 		
 * In the next two or three months, we will provide more algorithms' implementations, examples, and pre-trained models.
 
