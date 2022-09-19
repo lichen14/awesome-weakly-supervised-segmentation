@@ -4,6 +4,21 @@
 * Recently, weak-supervised image segmentation has become a hot topic in medical&natural image computing. Unfortunately, there are only a few open-source codes and datasets, since the privacy policy and others. For easy evaluation and fair comparison, we are trying to build a semi-supervised medical image segmentation benchmark to boost the semi-supervised learning research in the medical image computing community. **If you are interested, you can push your implementations or ideas to this repo or contact [me](https://lichen14.github.io/) at any time**.  
 ### Typical weak annotations include image-level labels, bounding boxes, points, and scribbles. This repo focus on points and scribbles.
 
+## Content
+- [Literature List](#literature-list)
+- [Benchmark](#benchmark)
+  * [Medical Images](#medical-images)
+    + [COVID-19](#is-covid-dataset)
+    + [ACDC](#acdc-dataset)
+    + [LVSC](#lvsc-dataset)
+    + [CHAOS](#chaos-dataset)
+  * [Natural Images](#natural-images)
+  * [Others](#others)
+- [Tutorial](#tutorial)
+  * [中文](#中文)
+  * [English](#english)
+- [Conclusion](#conclusion)
+- [Questions and Suggestions](#questions-and-suggestions)
 <!-- * This repo has re-implemented these semi-supervised methods (with some modifications for semi-supervised medical image segmentation, more details please refer to these original works): (1) [Mean Teacher](https://papers.nips.cc/paper/6719-mean-teachers-are-better-role-models-weight-averaged-consistency-targets-improve-semi-supervised-deep-learning-results.pdf); (2) [Entropy Minimization](https://openaccess.thecvf.com/content_CVPR_2019/papers/Vu_ADVENT_Adversarial_Entropy_Minimization_for_Domain_Adaptation_in_Semantic_Segmentation_CVPR_2019_paper.pdf); (3) [Deep Adversarial Networks](https://link.springer.com/chapter/10.1007/978-3-319-66179-7_47); (4) [Uncertainty Aware Mean Teacher](https://arxiv.org/pdf/1907.07034.pdf); (5) [Interpolation Consistency Training](https://arxiv.org/pdf/1903.03825.pdf); (6) [Uncertainty Rectified Pyramid Consistency](https://arxiv.org/pdf/2012.07042.pdf); (7) [Cross Pseudo Supervision](https://arxiv.org/abs/2106.01226); (8) [Cross Consistency Training](https://openaccess.thecvf.com/content_CVPR_2020/papers/Ouali_Semi-Supervised_Semantic_Segmentation_With_Cross-Consistency_Training_CVPR_2020_paper.pdf); (9) [Deep Co-Training](https://openaccess.thecvf.com/content_ECCV_2018/papers/Siyuan_Qiao_Deep_Co-Training_for_ECCV_2018_paper.pdf); (10) [Cross Teaching between CNN and Transformer](https://arxiv.org/pdf/2112.04894.pdf); (11) [FixMatch](https://arxiv.org/abs/2001.07685); (12) [Regularized Dropout](https://proceedings.neurips.cc/paper/2021/file/5a66b9200f29ac3fa0ae244cc2a51b39-Paper.pdf). In addition, several backbones networks (both 2D and 3D) are also supported in this repo, such as **UNet, nnUNet, VNet, AttentionUNet, ENet, Swin-UNet, etc**.
 
 * This project was initially developed for our previous works. Now and future, we are still working on extending it to be more user-friendly and support more approaches to boost further and ease this topic research. 
@@ -15,15 +30,15 @@
 ## Literature List
 <h3> Keywords </h3>
 
-__`img.`__: image level label &emsp; | &emsp; __`scribble.`__: scribble level label &emsp; | &emsp; __`box.`__: bounding box label &emsp; | &emsp; __`point.`__: point level label
+__`scribble.`__: scribble level label &emsp;|&emsp; __`point.`__: point level label &emsp; | __`box.`__: bounding box label &emsp; | __`img.`__: image level label &emsp; | &emsp;
 
 Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular & cited in a survey &emsp;|&emsp;
 :sunflower: natural scene images &emsp;|&emsp; :earth_americas: remote sensing images &emsp;|&emsp; :hospital: medical images 
 
-|Date|1st Institute|Title|Code|Publication|Label
-|---|---|---|---|---|---|
-|2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scribble.`__ &emsp; :hospital: COVID-19|
-|2021-03|University of Edinburgh|Learning to Segment from Scribbles using Multi-scale Adversarial Attention Gates|[github](https://vios-s.github.io/multiscale-adversarial-attention-gates)|[TMI](https://ieeexplore.ieee.org/abstract/document/9389796)|__`scribble.`__ &emsp; :hospital: |
+|Date|1st Institute|Title|Code|Publication|Label|Dataset
+|---|---|---|---|---|---|---|
+|2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scribble.`__ |:hospital: [COVID-19](#is-covid-dataset)|
+|2021-03|University of Edinburgh|Learning to Segment from Scribbles using Multi-scale Adversarial Attention Gates|[github](https://vios-s.github.io/multiscale-adversarial-attention-gates)|[TMI](https://ieeexplore.ieee.org/abstract/document/9389796)|__`scribble.`__ &emsp; |:hospital: [ACDC, LVSC, CHAOS](#acdc-dataset)|
 |2022-09|H. Basak and R. Sarkar|Addressing Class Imbalance in Semi-supervised Image Segmentation: A Study on Cardiac MRI|None|[MICCAI2022](https://arxiv.org/pdf/2209.00123.pdf)|
 |2022-08|Q. Wang and J. Chen|A regularization-driven Mean Teacher model based on semi-supervised learning for medical image segmentation|[Code](https://github.com/qingwang-usc/RMT_VAT)|[PMB2022](https://iopscience.iop.org/article/10.1088/1361-6560/ac89c8)|
 |2022-08|Y. Meng and Y. Zheng|Dual Consistency Enabled Weakly and Semi-Supervised Optic Disc and Cup Segmentation with Dual Adaptive Graph Convolutional Networks|[Code](https://github.com/smallmax00/Dual_Adaptive_Graph_Reasoning)|[TMI2022](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870838)|
@@ -219,7 +234,8 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 |2016-09|D. Mahapatra|Semi-supervised learning and graph cuts for consensus based medical image segmentation|None|[PR2016](https://www.sciencedirect.com/science/article/pii/S0031320316302904)|
 
 ## Benchmark
-* [IS-COVID dataset](https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9098956&ref=)
+### Medical images 
+#### [IS-COVID dataset](https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9098956&ref=)
 
 |Label|Methods|dice|Jaccard|sensitivity|specificity|MAE|
 |---|---|---|---|---|---|---|
@@ -229,7 +245,7 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 ||USTM-Net|0.725|0.582|0.854|0.967|0.086|
 |Full|U-Net[49]|0.736|0.595|0.867|0.961|0.082|
 
-* [Lesion Segmentation (CC-COVID) dataset](https://www.cell.com/cell/pdf/S0092-8674(20)31071-0.pdf)
+#### [Lesion Segmentation (CC-COVID) dataset](https://www.cell.com/cell/pdf/S0092-8674(20)31071-0.pdf)
 
 <table>
 <table style="text-align: center">
@@ -327,6 +343,32 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
         <td>0.959 </td>
     </tr>
 </table>
+
+#### [ACDC dataset](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html)
+* [scribble available](https://vios-s.github.io/multiscale-adversarial-attention-gates/data)
+
+#### [CHAOS dataset]() 
+* [scribble generation](https://github.com/gvalvano/multiscale-adversarial-attention-gates/blob/fc05d70d411d20147075392c14fced274c1bf6ee/data_interface/scribble_generators/scribble_generators.py#L5)
+
+#### [LVSC dataset]()
+* [scribble generation](https://github.com/gvalvano/multiscale-adversarial-attention-gates/blob/fc05d70d411d20147075392c14fced274c1bf6ee/data_interface/scribble_generators/scribble_generators.py#L5)
+
+** Dice **
+| Supervision Type | Model          | ACDC      | LVSC      | CHAOS-T1  | CHAOS-T2  |
+|------------------|----------------|-----------|-----------|-----------|-----------|
+| Scribble         | UNet pcE        | 79.0±0.06 | 62.3±0.09 | 34.4±0.06 | 37.5±0.06 |
+| Scribble         | UNet wpcE       | 69.4±0.07 | 59.1±0.07 | 40.0±0.05 | 52.1±0.05 |
+| Scribble         | UNet cRF        | 69.6±0.07 | 60.4±0.08 | 40.5±0.05 | 44.7±0.06 |
+| Scribble         | TS-UNet cRF     | 37.3±0.08 | 50.5±0.07 | 29.3±0.05 | 27.6±0.05 |
+| Scribble         | PostDAE        | 69.0±0.06 | 58.6±0.07 | 29.1±0.06 | 35.5±0.05 |
+| Scribble         | UNet D          | 61.8±0.08 | 31.7±0.09 | 44.0±0.03 | 46.3±0.01 |
+| Scribble         | ACCL           | 82.6±0.05 | 65.9±0.08 | 48.3±0.07 | 49.7±0.05 |
+| Scribble         | [Valvano et al.](https://ieeexplore.ieee.org/abstract/document/9389796) | 84.3±0.04 | 65.5±0.08 | 56.8±0.05 | 57.8±0.04 |
+| Mask             | UNet UB         | 82.0±0.qs | 67.2±0.07 | 60.8±0.06 | 58.6±0.01 |
+| Mask             | UNet D UB       | 83.9±0.05 | 67.9±0.09 | 63.9±0.05 | 60.8±0.01 |
+
+### natural images 
+### others 
 
 ## Tutorial
 * 中文：
