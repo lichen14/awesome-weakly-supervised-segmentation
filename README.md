@@ -8,6 +8,7 @@
 - [Literature List](#literature-list)
 - [Benchmark](#benchmark)
   * [Medical Images](#medical-images)
+    + [VS & BraTS](#vs)
     + [COVID-19](#is-covid-dataset)
     + [ACDC](#acdc-dataset)
     + [LVSC](#lvsc-dataset)
@@ -37,10 +38,10 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 
 |Date|1st Institute|Title|Code|Publication|Label|Dataset
 |---|---|---|---|---|---|---|
-|2022-08|University of Electronic Science and Technology of China|PA-Seg: Learning from Point Annotations for 3D Medical Image Segmen- tation using Contextual Regularization and Cross Knowledge Distillation|None|[Arxiv](https://arxiv.org/abs/2208.05669)|__`point.`__ |:hospital: [VS,BraTS](#vs)|
+|2022-08|University of Electronic Science and Technology of China 成电王国泰组|PA-Seg: Learning from Point Annotations for 3D Medical Image Segmen- tation using Contextual Regularization and Cross Knowledge Distillation|None|[Arxiv](https://arxiv.org/abs/2208.05669) under TMI revision|__`point.`__ |:hospital: [VS,BraTS](#vs)|
 |2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scrib.`__ |:hospital: [COVID-19](#is-covid-dataset)|
 |2021-03|University of Edinburgh|Learning to Segment from Scribbles using Multi-scale Adversarial Attention Gates|[github](https://vios-s.github.io/multiscale-adversarial-attention-gates)|[TMI](https://ieeexplore.ieee.org/abstract/document/9389796)|__`scrib.`__ &emsp; |:hospital: [ACDC, LVSC, CHAOS](#acdc-dataset)|
-|2021-01|Element AI|A Weakly Supervised Consistency-based Learning Method for COVID-19 Segmentation in CT Images|[github](https://github.com/ IssamLaradji/covid19_weak_supervision)|[WACV](https://ieeexplore.ieee.org/document/9423094/)|__`point.`__ &emsp; |:hospital: COVID-19|
+|2021-01|Element AI|A Weakly Supervised Consistency-based Learning Method for COVID-19 Segmentation in CT Images|[github](https://github.com/IssamLaradji/covid19_weak_supervision)|[WACV](https://ieeexplore.ieee.org/document/9423094/)|__`point.`__ &emsp; |:hospital: COVID-19|
 |2022-09|H. Basak and R. Sarkar|Addressing Class Imbalance in Semi-supervised Image Segmentation: A Study on Cardiac MRI|None|[MICCAI2022](https://arxiv.org/pdf/2209.00123.pdf)|
 |2022-08|Q. Wang and J. Chen|A regularization-driven Mean Teacher model based on semi-supervised learning for medical image segmentation|[Code](https://github.com/qingwang-usc/RMT_VAT)|[PMB2022](https://iopscience.iop.org/article/10.1088/1361-6560/ac89c8)|
 |2022-08|Y. Meng and Y. Zheng|Dual Consistency Enabled Weakly and Semi-Supervised Optic Disc and Cup Segmentation with Dual Adaptive Graph Convolutional Networks|[Code](https://github.com/smallmax00/Dual_Adaptive_Graph_Reasoning)|[TMI2022](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870838)|
@@ -237,6 +238,11 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 
 ## Benchmark
 ### Medical images 
+#### [VS](https://www.nature.com/articles/s41597-021-01064-w)
+#### [BraTS](https://doi.org/10.1109/tmi.2014.2377694)
+Vestibular Schwannoma (VS) & Brain Tumor Segmentation
+<p align="center"><img width="100%" src="images/pa-seg-result.png" /></p> 
+
 #### [IS-COVID dataset](https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9098956&ref=)
 
 |Label|Methods|dice|Jaccard|sensitivity|specificity|MAE|
