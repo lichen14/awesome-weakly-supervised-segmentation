@@ -8,12 +8,13 @@
 - [Literature List](#literature-list)
 - [Benchmark](#benchmark)
   * [Medical Images](#medical-images)
-    + [VS & BraTS](#vs)
+    + [VS & BraTS](#brain-tumor-segmentation)
     + [COVID-19](#is-covid-dataset)
     + [ACDC](#acdc-dataset)
     + [LVSC](#lvsc-dataset)
     + [CHAOS](#chaos-dataset)
   * [Natural Images](#natural-images)
+    + [COD10K,CAMO,CHAMELEON](#camouflaged-object-detection)
   * [Others](#others)
 - [Tutorial](#tutorial)
   * [中文](#中文)
@@ -38,7 +39,8 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 
 |Date|1st Institute|Title|Code|Publication|Label|Dataset|
 |---|---|---|---|---|---|---|
-|2022-08|University of Electronic Science and Technology of China 成电王国泰组|PA-Seg: Learning from Point Annotations for 3D Medical Image Segmen- tation using Contextual Regularization and Cross Knowledge Distillation|None|[Arxiv](https://arxiv.org/abs/2208.05669) under TMI revision|__`point.`__ |:hospital: [VS,BraTS](#vs)|
+|2022-08|University of Electronic Science and Technology of China 成电王国泰组|PA-Seg: Learning from Point Annotations for 3D Medical Image Segmen- tation using Contextual Regularization and Cross Knowledge Distillation|None|[Arxiv](https://arxiv.org/abs/2208.05669) under TMI revision|__`point.`__ |:hospital: [VS, BraTS](#vs)|
+|2022-07|City University of Hong Kong|Weakly-Supervised Camouflaged Object Detection with Scribble Annotation|None|[Arxiv](https://arxiv.org/abs/2207.14083)|__`scrib.`__ |:sunflower: [COD10K, CAMO, CHAMELEON](#camouflaged-object-detection)|
 |2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scrib.`__ |:hospital: [COVID-19](#is-covid-dataset)|
 |2021-03|University of Edinburgh|Learning to Segment from Scribbles using Multi-scale Adversarial Attention Gates|[github](https://vios-s.github.io/multiscale-adversarial-attention-gates)|[TMI](https://ieeexplore.ieee.org/abstract/document/9389796)|__`scrib.`__|:hospital: [Heart Segmentation](#heart-segmentation), [Abdominal Segmentation](#abdominal-segmentation)|
 |2021-01|Element AI|A Weakly Supervised Consistency-based Learning Method for COVID-19 Segmentation in CT Images|[github](https://github.com/IssamLaradji/covid19_weak_supervision)|[WACV](https://ieeexplore.ieee.org/document/9423094/)|__`point.`__|:hospital: COVID-19|
@@ -47,9 +49,10 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 
 ## Benchmark
 ### Medical images 
-#### [VS](https://www.nature.com/articles/s41597-021-01064-w)
-#### [BraTS](https://doi.org/10.1109/tmi.2014.2377694)
-Vestibular Schwannoma (VS) & Brain Tumor Segmentation
+#### Vestibular Schwannoma
+* [VS](https://www.nature.com/articles/s41597-021-01064-w)
+#### Brain Tumor Segmentation
+* [BraTS](https://doi.org/10.1109/tmi.2014.2377694)
 <p align="center"><img width="100%" src="images/pa-seg-result.png" /></p> 
 
 #### [IS-COVID dataset](https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9098956&ref=)
@@ -197,6 +200,11 @@ Vestibular Schwannoma (VS) & Brain Tumor Segmentation
 |Full|Full|0.9298[0.9149]|0.8774[0.7879]|0.8688[0.8390]|0.8134[0.7014]|0.7014[0.6677]|
 
 ### natural images 
+#### Camouflaged Object Detection
+* [COD10K](https://ieeexplore.ieee.org/document/9156837/)
+* [CAMO](https://www.sciencedirect.com/science/article/abs/pii/S1077314219300608)
+* [CHAMELEON](https://www.polsl.pl/rau6/chameleon-database-animal-camouflage-analysis/)
+<p align="center"><img width="100%" src="images/weak-cod.png" /></p> 
 ### others 
 
 ## Tutorial
