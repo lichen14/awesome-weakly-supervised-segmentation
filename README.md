@@ -15,6 +15,7 @@
     + [CHAOS](#chaos-dataset)
   * [Natural Images](#natural-images)
     + [COD10K,CAMO,CHAMELEON](#camouflaged-object-detection)
+    + [DUTS testing dataset, ECSSD, DUT, PASCAL-S, HKU-IS, THUR](#salient-object-detection)
   * [Others](#others)
 - [Tutorial](#tutorial)
   * [中文](#中文)
@@ -44,6 +45,7 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 |2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scrib.`__ |:hospital: [COVID-19](#is-covid-dataset)|
 |2021-03|University of Edinburgh|Learning to Segment from Scribbles using Multi-scale Adversarial Attention Gates|[github](https://vios-s.github.io/multiscale-adversarial-attention-gates)|[TMI](https://ieeexplore.ieee.org/abstract/document/9389796)|__`scrib.`__|:hospital: [Heart Segmentation](#heart-segmentation), [Abdominal Segmentation](#abdominal-segmentation)|
 |2021-01|Element AI|A Weakly Supervised Consistency-based Learning Method for COVID-19 Segmentation in CT Images|[github](https://github.com/IssamLaradji/covid19_weak_supervision)|[WACV](https://ieeexplore.ieee.org/document/9423094/)|__`point.`__|:hospital: COVID-19|
+|2020-07|Australian National University|Weakly-Supervised Salient Object Detection via Scribble Annotations|[github](https://github.com/JingZhang617/Scribble_Saliency)|[CVPR](https://ieeexplore.ieee.org/document/9157788)|__`scrib.`__|:sunflower: [DUTS testing dataset, ECSSD, DUT, PASCAL-S, HKU-IS, THUR](#salient-object-detection)|
 |2020-09|Rutgers University|Weakly Supervised Deep Nuclei Segmentation Using Partial Points Annotation in Histopathology Images|None|[TMI](https://ieeexplore.ieee.org/abstract/document/9116833)|__`point.`__ |:hospital: |
 |2020-06|Ulsan National Institute of Science and Technology|Scribble2Label: Scribble-Supervised Cell Segmentation via Self-Generating Pseudo-Labels with Consistency|[github](https://github.com/hvcl/scribble2label)|[MICCAI](https://link.springer.com/chapter/10.1007/978-3-030-59710-8_2)|__`scrib.`__|:hospital: [Cell segmentation](#cell-segmentation)|
 
@@ -199,13 +201,23 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 |Point|Qu[13]|-|-|-|0.5544[0.7204]|0.6099[0.7127]|
 |Full|Full|0.9298[0.9149]|0.8774[0.7879]|0.8688[0.8390]|0.8134[0.7014]|0.7014[0.6677]|
 
-### natural images 
+### Natural Images 
 #### Camouflaged Object Detection
 * [COD10K](https://ieeexplore.ieee.org/document/9156837/)
 * [CAMO](https://www.sciencedirect.com/science/article/abs/pii/S1077314219300608)
 * [CHAMELEON](https://www.polsl.pl/rau6/chameleon-database-animal-camouflage-analysis/)
 <p align="center"><img width="100%" src="images/weak-cod.png" /></p> 
-### others 
+
+#### Salient Object Detection
+* [DUTS](https://ieeexplore.ieee.org/document/8099887)
+* [ECSSD](https://ieeexplore.ieee.org/document/6618997)
+* [DUT](https://ieeexplore.ieee.org/document/6619251)
+* [PASCAL-S](https://ieeexplore.ieee.org/document/6909437)
+* [HKU-IS](https://ieeexplore.ieee.org/document/7299184/)
+* [THUR](https://link.springer.com/article/10.1007/s00371-013-0867-4)
+<p align="center"><img width="100%" src="images/result-sod.png" /></p> 
+
+### Others 
 
 ## Tutorial
 * 中文：
