@@ -1,7 +1,9 @@
-# Weakly-supervised-learning-for-image-segmentation
+# Weakly-supervised-learning-for-image-analysis
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  ![GitHub stars](https://img.shields.io/github/stars/lichen14/awesome-weakly-supervised-segmentation?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/lichen14/awesome-weakly-supervised-segmentation?color=green&label=Fork)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=lichen14.awesome-weakly-supervised-segmentation)
-* Recently, weak-supervised image segmentation has become a hot topic in medical&natural image computing. Unfortunately, there are only a few open-source codes and datasets, since the privacy policy and others. For easy evaluation and fair comparison, we are trying to build a semi-supervised medical image segmentation benchmark to boost the semi-supervised learning research in the medical image computing community. **If you are interested, you can push your implementations or ideas to this repo or contact [me](https://lichen14.github.io/) at any time**.  
+* Recently, weak-supervised image analysis has become a hot topic in medical&natural image computing. Unfortunately, there are only a few open-source codes and datasets, since the privacy policy and others. For easy evaluation and fair comparison, we are trying to build a weak-supervised image analysis benchmark to boost the weak-supervised learning research in the image computing community. 
+* If you are interested, you can push your implementations or ideas to this repo or contact [me](https://lichen14.github.io/) at any time.
+* My personal interest is mainly focused on medical image segmentation tasks, but this repo will also collect many papers on natural image detection and segmentation tasks.   
 ### Typical weak annotations include image-level labels, bounding boxes, points, and scribbles. This repo focus on points and scribbles.
 
 ## Content
@@ -16,6 +18,7 @@
   * [Natural Images](#natural-images)
     + [COD10K,CAMO,CHAMELEON](#camouflaged-object-detection)
     + [DUTS testing dataset, ECSSD, DUT, PASCAL-S, HKU-IS, THUR](#salient-object-detection)
+    + [MS-COCO, PASCAL VOC , Bees, CrowdHuman and Objects365](#semi-or-weak-supervised-object-detection)
   * [Others](#others)
 - [Tutorial](#tutorial)
   * [中文](#中文)
@@ -42,6 +45,7 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 |---|---|---|---|---|---|---|
 |2022-08|University of Electronic Science and Technology of China 成电王国泰组|PA-Seg: Learning from Point Annotations for 3D Medical Image Segmen- tation using Contextual Regularization and Cross Knowledge Distillation|None|[Arxiv](https://arxiv.org/abs/2208.05669) under TMI revision|__`point.`__ |:hospital: [VS, BraTS](#vs)|
 |2022-07|City University of Hong Kong|Weakly-Supervised Camouflaged Object Detection with Scribble Annotation|None|[Arxiv](https://arxiv.org/abs/2207.14083)|__`scrib.`__ |:sunflower: [COD10K, CAMO, CHAMELEON](#camouflaged-object-detection)|
+|2022-06|AWS AI Labs|Omni-DETR: Omni-Supervised Object Detection with Transformers|[github](https://github.com/amazon-research/omni-detr)|[CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/html/Wang_Omni-DETR_Omni-Supervised_Object_Detection_With_Transformers_CVPR_2022_paper.html)|__`point.`__ __`box.`__ __`img.`__|:sunflower: [MS-COCO, PASCAL VOC, Bees, CrowdHuman, Objects365](#semi-or-weak-supervised-object-detection)|
 |2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scrib.`__ |:hospital: [COVID-19](#is-covid-dataset)|
 |2021-06|UC Berkeley|Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning|[github](https://github.com/twke18/SPML)|[ICLR](https://bair.berkeley.edu/blog/2021/07/22/spml/)|__`scrib.`__ __`point.`__ __`box.`__ __`img.`__|:sunflower: Pascal VOC 2012|
 |2021-03|University of Edinburgh|Learning to Segment from Scribbles using Multi-scale Adversarial Attention Gates|[github](https://vios-s.github.io/multiscale-adversarial-attention-gates)|[TMI](https://ieeexplore.ieee.org/abstract/document/9389796)|__`scrib.`__|:hospital: [Heart Segmentation](#heart-segmentation), [Abdominal Segmentation](#abdominal-segmentation)|
@@ -208,6 +212,16 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 * [CAMO](https://www.sciencedirect.com/science/article/abs/pii/S1077314219300608)
 * [CHAMELEON](https://www.polsl.pl/rau6/chameleon-database-animal-camouflage-analysis/)
 <p align="center"><img width="100%" src="images/weak-cod.png" /></p> 
+
+#### Semi or Weak-Supervised Object Detection
+* [MS-COCO](https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48)
+* [PASCAL VOC](https://link.springer.com/article/10.1007/s11263-009-0275-4)
+<p align="center"><img width="50%" src="images/omni-table3.png" /></p> <p align="center"><img width="50%" src="images/omni-table4.png" /></p> <p align="center"><img width="50%" src="images/omni-table5.png" /></p> <p align="center"><img width="50%" src="images/omni-table6.png" /></p> <p align="center"><img width="50%" src="images/omni-table7.png" /></p> 
+
+* [Bees](https://lila.science/datasets/boxes-on-bees-and-pollen)
+* [CrowdHuman](https://arxiv.org/abs/1805.00123v1)
+* [Objects365](https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf)
+
 
 #### Salient Object Detection
 * [DUTS](https://ieeexplore.ieee.org/document/8099887)
