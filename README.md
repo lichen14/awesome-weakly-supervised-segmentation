@@ -13,6 +13,7 @@
     + [VS & BraTS](#brain-tumor-segmentation)
     + [COVID-19](#is-covid-dataset)
     + [ACDC](#acdc-dataset)
+    + [MSCMRseg](#mscmrseg-dataset)
     + [LVSC](#lvsc-dataset)
     + [CHAOS](#chaos-dataset)
   * [Natural Images](#natural-images)
@@ -45,6 +46,8 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 |---|---|---|---|---|---|---|
 |2022-08|University of Electronic Science and Technology of China 成电王国泰组|PA-Seg: Learning from Point Annotations for 3D Medical Image Segmen- tation using Contextual Regularization and Cross Knowledge Distillation|None|[Arxiv](https://arxiv.org/abs/2208.05669) under TMI revision|__`point.`__ |:hospital: [VS, BraTS](#vs)|
 |2022-07|City University of Hong Kong|Weakly-Supervised Camouflaged Object Detection with Scribble Annotation|None|[Arxiv](https://arxiv.org/abs/2207.14083)|__`scrib.`__ |:sunflower: [COD10K, CAMO, CHAMELEON](#camouflaged-object-detection)|
+|2022-06|Fudan University|CycleMix: A Holistic Strategy for Medical Image Segmentation from Scribble Supervision
+|[github](https://github.com/BWGZK/CycleMix)|[CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_CycleMix_A_Holistic_Strategy_for_Medical_Image_Segmentation_From_Scribble_CVPR_2022_paper.html)|__`scrib.`__ |:hospital: [ACDC, MSCMRseg](#heart-segmentation)|
 |2022-06|AWS AI Labs|Omni-DETR: Omni-Supervised Object Detection with Transformers|[github](https://github.com/amazon-research/omni-detr)|[CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/html/Wang_Omni-DETR_Omni-Supervised_Object_Detection_With_Transformers_CVPR_2022_paper.html)|__`point.`__ __`box.`__ __`img.`__|:sunflower: [MS-COCO, PASCAL VOC, Bees, CrowdHuman, Objects365](#semi-or-weak-supervised-object-detection)|
 |2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scrib.`__ |:hospital: [COVID-19](#is-covid-dataset)|
 |2021-06|UC Berkeley|Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning|[github](https://github.com/twke18/SPML)|[ICLR](https://bair.berkeley.edu/blog/2021/07/22/spml/)|__`scrib.`__ __`point.`__ __`box.`__ __`img.`__|:sunflower: Pascal VOC 2012|
@@ -174,6 +177,8 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 #### Heart Segmentation
 * [ACDC dataset](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html), [scribble available](https://vios-s.github.io/multiscale-adversarial-attention-gates/data)
 * [LVSC dataset](https://www.sciencedirect.com/science/article/abs/pii/S1361841513001217), [scribble generation](https://github.com/gvalvano/multiscale-adversarial-attention-gates/blob/fc05d70d411d20147075392c14fced274c1bf6ee/data_interface/scribble_generators/scribble_generators.py#L5)
+* [MSCMRseg dataset](https://zmiclab.github.io/zxh/0/mscmrseg19/index.html), [scribble available](https://github.com/BWGZK/CycleMix/tree/main/MSCMR_scribbles)
+<p align="center"><img width="100%" src="images/cyclemix.jpg" /></p> 
 
 #### Abdominal Segmentation
 * [CHAOS dataset](https://chaos.grand-challenge.org/),[scribble generation](https://github.com/gvalvano/multiscale-adversarial-attention-gates/blob/fc05d70d411d20147075392c14fced274c1bf6ee/data_interface/scribble_generators/scribble_generators.py#L5)
