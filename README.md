@@ -47,6 +47,7 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 |2022-08|University of Electronic Science and Technology of China 成电王国泰组|PA-Seg: Learning from Point Annotations for 3D Medical Image Segmen- tation using Contextual Regularization and Cross Knowledge Distillation|None|[Arxiv](https://arxiv.org/abs/2208.05669) under TMI revision|__`point.`__ |:hospital: [VS, BraTS](#vs)|
 |2022-07|City University of Hong Kong|Weakly-Supervised Camouflaged Object Detection with Scribble Annotation|None|[Arxiv](https://arxiv.org/abs/2207.14083)|__`scrib.`__ |:sunflower: [COD10K, CAMO, CHAMELEON](#camouflaged-object-detection)|
 |2022-06|Fudan University|CycleMix: A Holistic Strategy for Medical Image Segmentation from Scribble Supervision|[github](https://github.com/BWGZK/CycleMix)|[CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_CycleMix_A_Holistic_Strategy_for_Medical_Image_Segmentation_From_Scribble_CVPR_2022_paper.html)|__`scrib.`__ |:hospital: [ACDC, MSCMRseg](#heart-segmentation)|
+|2022-03|Shanghai Jiao Tong University|Scribble2D5: Weakly-Supervised Volumetric Image Segmentation via Scribble Annotations|[github](https://github.com/Qybc/Scribble2D5)|[MICCAI 2022](https://arxiv.org/abs/2205.06779v2)|__`scrib.`__ |:hospital: [ACDC, VS, CHAOS](#heart-segmentation)|
 |2022-03|University of Electronic Science and Technology of China 成电王国泰组|Scribble-Supervised Medical Image Segmentation via Dual-Branch Network and Dynamically Mixed Pseudo Labels Supervision|[github](https://github.com/HiLab-git/WSL4MIS)|[MICCAI 2022](https://arxiv.org/abs/2203.02106v1)|__`scrib.`__ |:hospital: [ACDC](#heart-segmentation)|
 |2022-06|AWS AI Labs|Omni-DETR: Omni-Supervised Object Detection with Transformers|[github](https://github.com/amazon-research/omni-detr)|[CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/html/Wang_Omni-DETR_Omni-Supervised_Object_Detection_With_Transformers_CVPR_2022_paper.html)|__`point.`__ __`box.`__ __`img.`__|:sunflower: [MS-COCO, PASCAL VOC, Bees, CrowdHuman, Objects365](#semi-or-weak-supervised-object-detection)|
 |2021-09|Wuhan University of Science and Technology|Weakly Supervised Segmentation of COVID19 Infection with Scribble Annotation on CT Image|None|[Pattern Recognition](https://doi.org/10.1016/j.patcog.2021.108341)|__`scrib.`__ |:hospital: [COVID-19](#is-covid-dataset)|
@@ -181,6 +182,7 @@ Statistics: :fire: code is available & stars >= 100 &emsp;|&emsp; :star: popular
 * [MSCMRseg dataset](https://zmiclab.github.io/zxh/0/mscmrseg19/index.html), [scribble available](https://github.com/BWGZK/CycleMix/tree/main/MSCMR_scribbles)
 <p align="center"><img width="100%" src="images/cyclemix.jpeg" /></p> 
 <p align="center"><img width="100%" src="images/luo_2022_miccai.jpg" /></p> 
+<p align="center"><img width="100%" src="images/scribble2D5.png" /></p> 
 
 #### Abdominal Segmentation
 * [CHAOS dataset](https://chaos.grand-challenge.org/),[scribble generation](https://github.com/gvalvano/multiscale-adversarial-attention-gates/blob/fc05d70d411d20147075392c14fced274c1bf6ee/data_interface/scribble_generators/scribble_generators.py#L5)
